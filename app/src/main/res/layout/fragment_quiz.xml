@@ -71,5 +71,39 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:text="Answer4" />
-    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/visibilityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+            android:textSize="18sp"
+            tools:text="💪 Bonne Réponse"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            android:textAlignment="textEnd" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#767573"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:text="Suivant"
+            android:visibility="invisible"
+            tools:visibility="visible"/>
+
+    </LinearLayout>
+
 </LinearLayout>
