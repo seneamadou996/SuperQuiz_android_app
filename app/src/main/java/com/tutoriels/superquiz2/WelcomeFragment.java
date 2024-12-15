@@ -10,6 +10,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -72,6 +73,7 @@ public class WelcomeFragment extends Fragment {
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 QuizFragment quizFragment = QuizFragment.newInstance();
                 fragmentTransaction.add(R.id.fragment_container_view, quizFragment);
+                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });
